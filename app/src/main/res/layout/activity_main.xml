@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2726"
+    android:backgroundTint="#1E2726"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#393742"
+        android:backgroundTint="#393742">
+
+
+        <ImageView
+            android:id="@+id/exis"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:background="#282d43"
+            android:backgroundTint="#282d43"
+            app:srcCompat="@drawable/exis" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:background="#282d43"
+            android:backgroundTint="#282d43"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/repo"
+            android:layout_width="400dp"
+            android:layout_height="64dp"
+            android:layout_toLeftOf="@id/corazon"
+            android:layout_toRightOf="@id/exis"
+            android:background="#282d43"
+            android:backgroundTint="#282d43"
+            app:srcCompat="@drawable/titulo_repro" />
+
+        <ImageView
+            android:id="@+id/listas"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_toLeftOf="@id/menu"
+            android:background="#282d43"
+            android:backgroundTint="#282d43"
+            app:srcCompat="@drawable/listas" />
+
+        <ImageView
+            android:id="@+id/corazon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_toLeftOf="@id/listas"
+            android:background="#282d43"
+            android:backgroundTint="#282d43"
+            app:srcCompat="@drawable/corazon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/controles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#322628"
+        android:backgroundTint="#322628"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/modo_repro" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/anterior" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            app:srcCompat="@drawable/pausa" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/siguiente" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/aleatorio" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#3B3738"
+        android:backgroundTint="#3B3738"
+        app:layout_constraintBottom_toTopOf="@+id/controles">
+
+        <ImageView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tiulo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="#1E2726"
+        android:backgroundTint="#1E2726"
+        app:layout_constraintBottom_toBottomOf="@id/relativeLayout"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/caratula"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1E2726"
+            android:backgroundTint="#1E2726"
+            app:srcCompat="@drawable/caratula" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
